@@ -1,0 +1,25 @@
+{
+  "name": "hadarjs-client",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Jimmy Codder"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "sucrase ./src -d ./lib --transforms imports"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alluminox/hadar-client.git"
+  }
+}
