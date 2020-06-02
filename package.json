@@ -20,6 +20,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alluminox/hadar-client.git"
+    "url": "git+https://github.com/Alluminox/hadarjs-client.git"
   }
 }
