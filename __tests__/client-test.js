@@ -25,29 +25,21 @@ const start = async () => {
         
 
         const api = await await HadarClient.selfRegister();
-        console.log(api)
+
 
         await api.info();
-
         // const replicas = await api.replicas();
-        // console.log('REPLICAS', replicas)
-
-        // const data = await api.services();
-        // console.log(data)
 
 
         setTimeout(() => {
             api.selfUnregister().then(() => {
-                console.log("Service has been unregistred!")
-                // process.exit(0)
+                process.exit(0)
 
-                // api.info().then(() => console.log("GET INFO AFTER UNREGISTER"))
-                // .catch(err => console.log('ERROR TO GET INFO AFTER UNREGISTER'))
             })
         }, 5000)
 
     } catch(err) {
-        console.log(err)
+
         throw err;
     }
 }
