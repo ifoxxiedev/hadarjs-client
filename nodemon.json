@@ -1,6 +1,6 @@
 {
     "ext": "js",
     "execMap": {
-        "js": "sucrase-node src/index.js --transports=imports"
+        "js": "sucrase-node __tests__/client-test.js --transports=imports"
     }
 }
