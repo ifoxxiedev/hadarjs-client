@@ -11,7 +11,7 @@ const start = async () => {
 
         
         HadarClient
-        .signKeys('hadar.s.07c9df8818', '$2a$04$KCFeG5XR8iuNBVyybJKRrONiwiiiZ3MrDELrmx7UldAgTETTn4U92')
+        .signKeys('hadar.s.76', '$2a$04$KCFeG5XR8iuNBVyybJKRrONiwiiiZ3MrDELrmx7UldAgTETTn4U92')
         .address({
             protocol: SuportedProtocols.HTTP,
             ip: '127.0.0.1',
