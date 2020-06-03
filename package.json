@@ -8,13 +8,20 @@
   },
   "scripts": {
     "dev": "nodemon",
-    "build": "sucrase ./src -d ./lib --transforms imports"
+    "build": "babel ./lib --out-dir ./build"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
     "nodemon": "^2.0.4",
     "sucrase": "^3.15.0"
   },

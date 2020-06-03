@@ -1,12 +1,14 @@
 require('dotenv').config({
     'path': '.env.dev'
 })
-import HadarClient, { SuportedServices, SuportedProtocols } from '../src/index'
 
 
+const HadarClient = require('../build');
 
 const start = async () => {
     try {
+
+
         
         HadarClient
         .signKeys('hadar.s.07c9df8818', '$2a$04$KCFeG5XR8iuNBVyybJKRrONiwiiiZ3MrDELrmx7UldAgTETTn4U92')
